@@ -1,0 +1,38 @@
+<app-header></app-header>
+<main>
+
+    <div *ngIf="show" class="navbar-mobile">
+
+    </div>
+
+    <button (click)="abrirMobile()" class="container-menu-mobile">{{abrirFecharMenuMobile}}</button>
+    <div class="avaliacoes">
+        <div class="title-avaliacao">
+            <h3>99 Avaliações</h3>
+        </div>
+
+        <div class="navbar-avaliacao">
+            <nav>
+                <ul>
+                    <li><p>5.0</p></li>
+                    <li><p>4.0</p></li>
+                    <li><p>3.0</p></li>
+                    <li><p>2.0</p></li>
+                    <li><p>1.0</p></li>
+                    <li><p>Não Avaliaram</p></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="graphic">
+        <div id="chart">
+            <apx-chart
+              [series]="chartOptions.series!"
+              [chart]="chartOptions.chart!"
+              [dataLabels]="chartOptions.dataLabels!"
+              [plotOptions]="chartOptions.plotOptions!"
+            ></apx-chart>
+          </div>
+    </div>
+</main>
+<app-footer></app-footer>

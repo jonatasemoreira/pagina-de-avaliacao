@@ -1,0 +1,45 @@
+<footer>
+    <!--Footer Mobile-->
+    <div class="footer-mobile">
+        <table border="1">
+            <thead>
+                <tr>
+                    <td>Data</td>
+                    <td>Contato</td>
+                    <td>Avaliação</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of dataSeries">
+                    <td>{{item.data}}</td>
+                    <td>{{item.contato}}</td>
+                    <td>{{item.avaliacao}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <table class="footer-desktop" border="1">
+        <thead>
+            <tr>
+                <td>Data</td>
+                <td>Contato</td>
+                <td>Avaliação</td>
+                <td>Comentário</td>
+                <td>Profissional</td>
+                <td>Serviço</td>
+                <td>Unidade</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of dataSeries">
+                <td>{{item.data}}</td>
+                <td>{{item.contato}}</td>
+                <td>{{item.avaliacao}}</td>
+                <td>{{item.comentario}}</td>
+                <td>{{item.profissional}}</td>
+                <td>{{item.servico}}</td>
+                <td>{{item.unidade}}</td>
+            </tr>
+        </tbody>
+    </table>
+</footer>

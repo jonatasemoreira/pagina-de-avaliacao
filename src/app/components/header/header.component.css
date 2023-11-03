@@ -1,0 +1,42 @@
+header {
+    min-height: 130px;
+}
+header h2 {
+    margin-bottom: 1rem;
+}
+.inputs {
+    display: flex;
+    width: 50%;
+    float: left;
+}
+.item-inputs {
+    text-align: start;
+}
+.item-inputs select, input {
+    width: 300px;
+    height: 35px;
+    margin-right: 1.5rem;
+    border-radius: 5px;
+    outline: 0;
+    border: 1px solid silver;
+    padding-left: 1rem;
+    font-size: 18px;
+    cursor: pointer;
+}
+.item-inputs input {
+    background-color: #c0c0c092;
+    border: none;
+}
+.mes-periodo input{
+    text-align: start;
+}
+
+@media(max-width:768px) {
+    .inputs {
+        display: none;
+    }
+    header {
+        margin-top: 0.5em;
+        min-height: 60px;
+    }
+}

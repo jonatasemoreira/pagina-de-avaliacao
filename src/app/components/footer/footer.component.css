@@ -1,0 +1,44 @@
+footer {
+    min-height: 150px;
+    max-height: 250px;
+    border-radius: 5px;
+    border: 1px solid silver;
+    overflow-y: auto;
+}
+footer table {
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid silver;
+    border: none;
+}
+tr {
+    height: 40px;
+    border: 0;
+}
+thead tr td {
+    font-weight: bold;
+    border: none;
+    border-bottom: 1px solid silver;
+}
+tbody {
+    max-height: 200px;
+}
+tbody tr:hover {
+    background-color: silver;
+    transition: 0.5s;
+}
+tbody tr td {
+    border: transparent;
+}
+.footer-mobile {
+    display: none;
+}
+@media(max-width:768px) {
+    .footer-desktop {
+        display: none;
+    }
+    .footer-mobile {
+        display: block;
+    }
+}

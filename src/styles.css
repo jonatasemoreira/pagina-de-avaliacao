@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    overflow-x: hidden;
+    max-width: 1278px!important;
+    min-width: 90vw;
+    margin: 0 auto;
+    padding: 2.5rem;
+    font-family: sans-serif;
+}
+@media(max-width:768px) {
+    body {
+        padding: 1rem;
+    }
+}
